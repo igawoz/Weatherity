@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <script defer src="script.js"></script>
+    <title>Weatherity App</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <!-- <h1>Weatherity</h1> -->
+      <img src="img/logo.png" class="logo" />
+      <div class="city-input">
+        <!-- <h3>Enter City Name</h3> -->
+        <input
+          class="search-input"
+          type="text"
+          placeholder="London, Paris, Tokyo..."
+        />
+        <button class="location-btn search-btn">
+          <img src="img/search-alt-1-svgrepo-com.svg" />
+        </button>
+        <button class="location-btn cur-position-btn">
+          <img src="img/crosshair-svgrepo-com.svg" />
+        </button>
+      </div>
+      <div class="separator-line"></div>
+      <div class="weather-data">
+        <div class="current-details">
+          <h2>Search your city</h2>
+          <h4>Weather details</h4>
+          <ul class="additional-details">
+            <li><img src="img/humidity.png" /></li>
+            <li><img src="img/propability.png" /></li>
+            <li><img src="img/wind.png" /></li>
+            <li><img src="img/pressure.png" /></li>
+          </ul>
+        </div>
+
+        <div class="weather-forecast">
+          <ul class="forecast-cards">
+            <li class="card">
+              <h4>Day 1 Forecast</h4>
+              <div class="separator-line-card"></div>
+              <h4 class="description-card">Weather details</h4>
+            </li>
+            <li class="card">
+              <h4>Day 2 Forecast</h4>
+              <div class="separator-line-card"></div>
+              <h4 class="description-card">Weather details</h4>
+            </li>
+            <li class="card">
+              <h4>Day 3 Forecast</h4>
+              <div class="separator-line-card"></div>
+              <h4 class="description-card">Weather details</h4>
+            </li>
+            <li class="card">
+              <h4>Day 4 Forecast</h4>
+              <div class="separator-line-card"></div>
+              <h4 class="description-card">Weather details</h4>
+            </li>
+            <li class="card">
+              <h4>Day 5 Forecast</h4>
+              <div class="separator-line-card"></div>
+              <h4 class="description-card">Weather details</h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="map-display"></div>
+  </body>
+</html>

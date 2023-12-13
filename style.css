@@ -1,0 +1,207 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  color: rgb(38, 47, 54);
+  font-weight: 400;
+  line-height: 1.6;
+  /* height: 100vh; */
+  overscroll-behavior-y: none;
+  background-color: #ededed;
+  padding: 3rem;
+  margin-bottom: auto;
+  display: flex;
+}
+
+.sidebar {
+  flex-basis: 50%;
+  border-radius: 25px;
+  background-color: rgb(171, 194, 204);
+  box-shadow: 0.2rem 0.5rem 1rem 1rem rgb(201, 208, 213);
+  padding: 3rem;
+  margin: 20px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  height: 10rem;
+  align-self: center;
+  margin: 0rem 5rem 1rem 5rem;
+}
+
+.search-input {
+  font-size: 1.5rem;
+  border-radius: 20px;
+  outline: 4px solid rgb(147, 160, 183);
+  border-color: rgb(97, 108, 128);
+  box-shadow: 2px 2px 4px 4px rgba(59, 69, 84, 0.298);
+  padding-left: 20px;
+  margin-left: 5px;
+  width: 30rem;
+  height: 49px;
+  vertical-align: bottom;
+}
+
+.location-btn {
+  border-radius: 20px;
+  outline: 4px solid rgb(147, 160, 183);
+  border-color: rgb(97, 108, 128);
+  box-shadow: 2px 2px 4px 4px rgba(59, 69, 84, 0.298);
+  width: 55px;
+  height: 55px;
+  vertical-align: bottom;
+  margin: 0px 25px 0px 15px;
+  transition: 400ms all;
+}
+
+.location-btn img {
+  align-self: center;
+  width: 35px;
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.separator-line {
+  height: 2px;
+  width: 100%;
+  margin: 2rem;
+  background: rgb(54, 97, 91);
+  display: flex;
+}
+
+.current-details {
+  /* flex-basis: 20%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 0rem 2rem 1rem 2rem;
+  align-self: center;
+  width: 70rem;
+  border-radius: 25px;
+  background-color: rgb(231, 237, 243);
+  outline: 4px solid rgb(147, 160, 183);
+  box-shadow: 5px 3px 10px 5px rgba(59, 69, 84, 0.298);
+  text-align: center;
+  transition: 400ms all;
+}
+
+.location-btn:hover,
+.search-input:hover {
+  transform: scale(1.05);
+}
+
+.current-details:hover {
+  transform: scale(1.02);
+}
+
+.date {
+  margin-top: -1.6rem;
+  font-weight: 400;
+}
+
+.temp {
+  font-size: 6rem;
+  margin: -2rem 0rem -2rem 0rem;
+}
+
+.temp img {
+  width: 7rem;
+  margin: -1rem 1rem -1rem 1rem;
+  align-self: center;
+}
+
+.description {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.additional-details {
+  font-size: 1.2rem;
+  font-weight: 400;
+  display: flex;
+  gap: 3rem;
+  list-style-type: none;
+  padding: 0rem;
+  margin-top: unset;
+}
+
+.additional-details img {
+  align-self: center;
+  margin: 0rem 1rem -1.1rem 1rem;
+  width: 3.5rem;
+}
+
+.forecast-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  /* scale: 1.6; */
+  /* align-items: center; */
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.forecast-cards h3 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.forecast-cards h4 {
+  font-size: 1.2rem;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.card {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  border-radius: 25px;
+  background-color: rgb(219, 227, 236);
+  transition: 400ms all;
+  transform-origin: center;
+  box-shadow: 5px 3px 10px 5px rgba(59, 69, 84, 0.298);
+  outline: 4px solid rgb(147, 160, 183);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.separator-line-card {
+  height: 2px;
+  width: 100%;
+  background: rgb(54, 97, 91);
+}
+
+.card img {
+  width: 6rem;
+  margin: -1rem 0rem 0rem 0rem;
+}
+
+.description-card {
+  /* font-weight: 400; */
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+.additional-details-card {
+  font-weight: 400;
+}
+
+#map-display {
+  display: flex;
+  flex: 1;
+  border-radius: 25px;
+  margin: 20px;
+  box-shadow: 0.2rem 0.5rem 1rem 1rem rgb(181, 188, 192);
+  background-color: rgb(168, 168, 183);
+}
