@@ -19,3 +19,6 @@ https://weatherity-igawoz.netlify.app/
 ## Usage
 - Search by City: Enter a city name in the input field and click the search button or press Enter.
 - Current Location: Click the "Current Location" button to fetch weather data for your current location.
+
+![1](./img/1.jpg)
+![2](./img/2.jpg)
